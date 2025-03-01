@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
     cors({
-        origin:"https://studypoint-5207.onrender.com/",
+        origin:["https://study-point-code.vercel.app/"],
         credentials:true,
     })
 )
