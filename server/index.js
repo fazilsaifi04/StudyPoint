@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
     cors({
-        origin:["https://study-point-code.vercel.app/"],
+        origin:["https://study-point-kappa.vercel.app/"],
         credentials:true,
     })
 )
