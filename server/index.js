@@ -23,7 +23,7 @@ app.use(cookieParser());
 
 const allowedOrigins = [
   "https://study-point-taupe.vercel.app", // Your frontend URL
-  "http://localhost:3000",
+  "http://localhost:3000", // For local development
 ];
 
 app.use(
