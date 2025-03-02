@@ -20,23 +20,12 @@ database.connect();
 
 app.use(express.json());
 app.use(cookieParser());
-const allowedOrigins = [
-  "https://study-point-sandy.vercel.app",
-  "http://localhost:3000",
-];
-
 app.use(
-  cors({
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
-    credentials: true,
-  })
-);
+	cors({
+		origin:"http://localhost:3000",
+		credentials:true,
+	})
+)
 
 app.use(express.json());
 
